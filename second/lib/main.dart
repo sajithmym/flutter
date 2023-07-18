@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Second App",
       home: Scaffold(
-        body: ,
+        body: Image.asset("assets/space1.png"),
       ),
     );
   }
