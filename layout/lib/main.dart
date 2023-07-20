@@ -9,6 +9,27 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          children: [
+
+            Container(
+              width: 200,
+              height: 100,
+              decoration: BoxDecoration(
+                color: Colors.brown,
+                borderRadius: BorderRadius.circular(5)
+              ),
+            ),
+
+
+
+
+          ],
+        ),
+      ),
+    );
   }
 }
