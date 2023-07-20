@@ -1,0 +1,7 @@
+
+
+
+adb connect localhost:5555
+
+
+adb disconnect localhost:5555

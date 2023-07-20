@@ -10,24 +10,68 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.black,
-        body: Column(
-          children: [
-
-            Container(
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: Colors.brown,
-                borderRadius: BorderRadius.circular(5)
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: Colors.black,
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+      
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Container(
+                  width: double.maxFinite,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                ),
               ),
-            ),
+                    
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Container(
+                  width: double.maxFinite,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                ),
+              ),
+                    
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Container(
+                  width: double.maxFinite,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                ),
+              ),
 
-
-
-
-          ],
+                    
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Container(
+                  width: double.maxFinite,
+                  height: 330,
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                ),
+              ),
+      
+      
+      
+      
+            ],
+          ),
         ),
       ),
     );
