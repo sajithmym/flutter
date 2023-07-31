@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.teal,
+          backgroundColor: const Color.fromARGB(255, 35, 82, 92),
           body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 width: double.maxFinite,
@@ -23,6 +23,25 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.brown,
                     borderRadius: BorderRadius.circular(15)),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 200,
+                    height: 130,
+                    decoration: BoxDecoration(
+                        color: Colors.brown,
+                        borderRadius: BorderRadius.circular(15)),
+                  ),
+                  Container(
+                    width: 200,
+                    height: 130,
+                    decoration: BoxDecoration(
+                        color: Colors.brown,
+                        borderRadius: BorderRadius.circular(15)),
+                  ),
+                ],
               ),
             ],
           ),
