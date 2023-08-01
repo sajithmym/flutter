@@ -30,15 +30,18 @@ class MyApp extends StatelessWidget {
             ],
           ),
           body: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(20),
             child: Column(
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const Text(
                   "SPEACE DETAILS",
                   style: TextStyle(
-                      fontWeight: FontWeight.w500, color: Colors.white),
-                )
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                      fontSize: 20),
+                ),
+                Image.asset("img/space1.png"),
               ],
             ),
           ),
